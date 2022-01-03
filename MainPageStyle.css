@@ -16,11 +16,10 @@ p {
 }
 
 header {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
     height: 100px;
-    /*if you delete height the whole website shifts a bit, gotta fix*/
-
     font-family: "Roboto mono";
 }
 
