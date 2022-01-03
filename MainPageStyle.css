@@ -18,13 +18,28 @@ p {
 header {
     display: flex;
     justify-content: center;
+    height: 100px;
+    /*if you delete height the whole website shifts a bit, gotta fix*/
+
+    font-family: "Roboto mono";
 }
 
-header li {
+
+header a {
     display: inline-block;
-    padding: 20px;
+    padding: 30px;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
 }
 
+header a:hover {
+    font-size: 20px;
+    background-color:#CBF7F3
+}
+
+header a:visited {
+    color: #4D4218
+}
 
 .button {
     font-family: "Roboto Mono";
