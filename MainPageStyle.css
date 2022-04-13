@@ -23,7 +23,6 @@ header {
     font-family: "Roboto mono";
 }
 
-
 header a {
     display: inline-block;
     padding: 30px;
@@ -49,7 +48,6 @@ header a:visited {
     background-color: #CBF7F3;
     border-color: #786826;
 }
-
 
 .intro {
     margin-top: 150px;
@@ -84,7 +82,6 @@ main {
     display: flex;
     flex-direction: row;
 }
-
 
 #project p{
     font-size: 20px;

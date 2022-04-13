@@ -24,10 +24,12 @@ function makeRepositoriesInDivs(arrayOfRepositories) {
         var attr = document.createAttribute("id");
         var name = document.createElement("p");
         var description = document.createElement("p");
+
         attr.value = "project";
         smallDiv.setAttributeNode(attr);
         name.innerHTML = arrayOfRepositories[i].name;
         description.innerHTML = arrayOfRepositories[i].description;
+
         smallDiv.appendChild(name);
         smallDiv.appendChild(description);
         container.appendChild(smallDiv);
