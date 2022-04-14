@@ -31,11 +31,15 @@ function makeRepositoriesInDivs(arrayOfRepositories) {
         smallDiv.setAttributeNode(attr);
         name.innerHTML = arrayOfRepositories[i].name;
         description.innerHTML = arrayOfRepositories[i].description;
-        //button
+
+
         linkButton.innerHTML = "see on GitHub";
         linkButton.onclick = function () {
             window.open(arrayOfRepositories[i].html_url, "_blank");
         };
+
+        //linkButton = createButton(linkButton, arrayOfRepositories);
+
         smallDiv.appendChild(name);
         smallDiv.appendChild(description);
         smallDiv.appendChild(linkButton);
@@ -49,4 +53,12 @@ function sortRepositoriesAscending(arrayOfRepositories) {
         return new Date(b.created_at) - new Date(a.created_at); // oldest to newest date
     })
     return arrayOfRepositories;
+}
+
+function createButton(linkButton, arrayOfRepositories) {
+    linkButton.innerHTML = "see on GitHub";
+    linkButton.onclick = function () {
+        window.open(arrayOfRepositories[i].html_url, "_blank");
+    };
+    return linkButton;
 }

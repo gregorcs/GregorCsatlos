@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets"
   ],
-  "SelectedNode": "\\index.js",
+  "SelectedNode": "\\assets\\octocat.png",
   "PreviewInSolutionExplorer": false
 }
