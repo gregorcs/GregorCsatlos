@@ -23,9 +23,12 @@ p {
 header {
     display: inline-block;
     width: 100%;
+    background-color: #6c6a94;
     text-align: center;
-    height: 100px;
     font-family: "Roboto mono";
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 5px;
+    vertical-align: middle;
 }
 
 header a {
@@ -33,15 +36,16 @@ header a {
     padding: 30px;
     height: auto;
     width: 80px;
-    line-height: 50px;
     text-decoration: none;
     transition: all 0.25s ease-in-out;
     color: #cc9fb0;
 }
 
 header a:hover {
-   /* transform: scale(1.1);*/
+    /* transform: scale(1.1);*/
     background-color: #6c6a94;
+    box-shadow: #42386e 3px 3px 6px 0px inset, #42386e -3px -3px 6px 1px inset;
+    border-radius: 5px;
     color: #cc9fb0;
 }
 
@@ -82,7 +86,6 @@ main {
 .projects {
     display: flex;
     flex-direction: column;
-    border: solid black 2px;
 }
 
 #project {
@@ -90,9 +93,17 @@ main {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    margin: 1%;
+    box-shadow: #42386e 0px 4px 8px -2px, #42386e 0px 0px 0px 1px;
+    border-radius: 5px;
 }
 
 #project p{
     font-size: 20px;
     padding-left: 20px;
+}
+
+footer p {
+    font-size: 15px;
+    opacity: 0.5;
 }
