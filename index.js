@@ -10,6 +10,7 @@ function getRepositories() {
             console.log(JSON.parse(request.response));
             arrayOfRepositories = JSON.parse(request.response);
         }
+        arrayOfRepositories = sortRepositoriesAscending(arrayOfRepositories);
         makeRepositoriesInDivs(arrayOfRepositories);
     }
     return arrayOfRepositories;
@@ -22,7 +23,7 @@ function makeRepositoriesInDivs(arrayOfRepositories) {
     for (let i = 0; i < arrayOfRepositories.length; i++) {
         smallDiv = document.createElement("div");
         var attr = document.createAttribute("id");
-        var name = document.createElement("p");
+        var name = document.createElement("h3");
         var description = document.createElement("p");
 
         attr.value = "project";
@@ -34,4 +35,11 @@ function makeRepositoriesInDivs(arrayOfRepositories) {
         smallDiv.appendChild(description);
         container.appendChild(smallDiv);
     }
+}
+
+function sortRepositoriesAscending(arrayOfRepositories) {
+    arrayOfRepositories.sort((a, b) => {
+        return new Date(b.created_at) - new Date(a.created_at); // oldest to newest date
+    })
+    return arrayOfRepositories;
 }

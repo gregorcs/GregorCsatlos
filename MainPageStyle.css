@@ -1,8 +1,11 @@
 ﻿body {
     background-color: #2d235e;
+    background-image: linear-gradient(to right, #42386e 0%, #2d235e 30%, #2d235e 70%, #42386e 100%);
+    background-repeat: no-repeat;
+
 }
 
-h1 {
+h1, h3 {
     font-family: "Roboto Mono";
     font-weight: bolder;
     color: #f8a18d;
@@ -26,13 +29,16 @@ header {
 header a {
     display: inline-block;
     padding: 30px;
+    height: auto;
+    width: 80px;
+    line-height: 50px;
     text-decoration: none;
     transition: all 0.25s ease-in-out;
     color: #cc9fb0;
 }
 
 header a:hover {
-    font-size: 20px;
+   /* transform: scale(1.1);*/
     background-color: #6c6a94;
     color: #cc9fb0;
 }
@@ -80,7 +86,8 @@ main {
 #project {
     border: solid black 1px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding-left: 20px;
 }
 
 #project p{
