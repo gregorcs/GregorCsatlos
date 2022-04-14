@@ -66,6 +66,7 @@ header a:visited {
     margin-left: 15%;
     width: 500px;
     text-align: left;
+
 }
 
 main {
@@ -94,13 +95,24 @@ main {
     flex-direction: column;
     padding-left: 20px;
     margin: 1%;
-    box-shadow: #42386e 0px 4px 8px -2px, #42386e 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     border-radius: 5px;
 }
 
 #project p{
     font-size: 20px;
     padding-left: 20px;
+}
+
+button {
+    background-color: #6c6a94;
+    color: #f8a18d;
+    font-family: "Roboto Mono";
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    border-radius: 5px;
+    height: 50%;
+    width: 12%;
+    margin: 1%;
 }
 
 footer p {

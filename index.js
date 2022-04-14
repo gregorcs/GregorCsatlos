@@ -25,14 +25,21 @@ function makeRepositoriesInDivs(arrayOfRepositories) {
         var attr = document.createAttribute("id");
         var name = document.createElement("h3");
         var description = document.createElement("p");
-
+        var linkButton = document.createElement("button");
+        //writing to html
         attr.value = "project";
         smallDiv.setAttributeNode(attr);
         name.innerHTML = arrayOfRepositories[i].name;
         description.innerHTML = arrayOfRepositories[i].description;
-
+        //button
+        linkButton.innerHTML = "see on GitHub";
+        linkButton.onclick = function () {
+            window.open(arrayOfRepositories[i].html_url, "_blank");
+        };
         smallDiv.appendChild(name);
         smallDiv.appendChild(description);
+        smallDiv.appendChild(linkButton);
+
         container.appendChild(smallDiv);
     }
 }
