@@ -2,7 +2,9 @@
     background-color: #2d235e;
     background-image: linear-gradient(to right, #42386e 0%, #2d235e 30%, #2d235e 70%, #42386e 100%);
     background-repeat: no-repeat;
-
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1, h3 {
@@ -56,8 +58,8 @@ header a:visited {
 }
 
 .intro {
-    margin-top: 150px;
-    margin-left: 200px;
+    margin-top: 10%;
+    margin-left: 15%;
     width: 500px;
     text-align: left;
 }
